@@ -1,0 +1,74 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap');
+* {
+    box-sizing: border-box;
+    margin: 0;
+    font-family: "Lato", sans-serif;
+}
+span, a {
+    display: inline-block;
+}
+img {
+    max-width: 100%;
+    height: auto;
+    vertical-align: middle;
+}
+.container {
+    max-width: 1400px;
+    margin: 0 auto;
+    padding: 30px 100px;
+}
+.big {
+    display: flex;
+    flex-wrap: wrap;
+    row-gap: 30px;
+    column-gap: 3.5%;
+    border: 5px solid blue;
+}
+.box {
+    width: 31%;
+    border: 5px solid red;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+}
+.pic {
+    width: 35%;
+}
+.content {
+    width: 63%;
+}
+/* @media */
+@media(max-width:1250px){
+    .container {
+        padding: 15px;
+    }
+}
+@media(max-width:1000px){
+    .box {
+        width: 48%;
+    }
+}
+@media(max-width:650px){
+    .box {
+        width: 100%;
+    }
+    .big {
+        row-gap: 15px;
+    }
+}
+@media(max-width:400px){
+    .box {
+        justify-content: center;
+    }
+    .content {
+        width: 100%;
+    }
+    .pic {
+        width: 80%;
+        order: 1;
+    }
+    .content {
+        text-align: center;
+    }
+}
